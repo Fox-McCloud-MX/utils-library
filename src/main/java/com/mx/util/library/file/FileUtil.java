@@ -77,8 +77,8 @@ public class FileUtil {
 
         rows.forEach(row -> sList.add(row.split(delimiter)));
 
-        int i = 0;
         for (String[] sListArray : sList) {
+            int i = 0;
             Object o = Class.forName(clazz.getName()).newInstance();
             for (String s : Arrays.asList(sListArray)) {
                 lMethods.get(i++).invoke(o, s.trim());
