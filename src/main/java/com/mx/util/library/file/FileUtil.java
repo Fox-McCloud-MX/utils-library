@@ -66,7 +66,6 @@ public class FileUtil {
                 file.toPath(),
                 Charset.forName("ISO-8859-1")
         );
-        rows.remove(0);
 
         lMethods = lMethods.stream()
                 .filter(m -> m.getName().startsWith("set"))
@@ -76,9 +75,7 @@ public class FileUtil {
                 s -> headers.indexOf(s.getName().replace("set", "")))
         );
 
-        rows.forEach(row -> {
-            sList.add(row.split(delimiter));
-        });
+        rows.forEach(row -> sList.add(row.split(delimiter)));
 
         int i = 0;
         for (String[] sListArray : sList) {
