@@ -82,8 +82,8 @@ public class FileUtil {
             Object o = Class.forName(clazz.getName()).newInstance();
             for (String s : Arrays.asList(sListArray)) {
                 lMethods.get(i++).invoke(o, s.trim());
-                lClass.add((T) o);
             }
+            lClass.add((T) o);
         }
         
         return lClass;
