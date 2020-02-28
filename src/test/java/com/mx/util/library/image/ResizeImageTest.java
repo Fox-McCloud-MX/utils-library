@@ -12,6 +12,6 @@ public class ResizeImageTest {
     @Test
     public void imgToBase64String() throws IOException {
         ResizeImage resizeImage = new ResizeImage();
-        //TODO test this method with some base64 image
+        //TODO test this method with some base 64 image
     }
 }

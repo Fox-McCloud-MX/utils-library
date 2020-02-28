@@ -17,8 +17,8 @@ import java.util.Base64;
 @Slf4j
 public class ResizeImage {
 
-    private static final int IMG_WIDTH = 184;
-    private static final int IMG_HEIGHT = 184;
+    private static final int IMG_WIDTH = 100;
+    private static final int IMG_HEIGHT = 100;
     private static final int MAX_IMG_SIZE = 1;
 
     public static String resize(String imageBase64, String imageExtension) throws IOException {
